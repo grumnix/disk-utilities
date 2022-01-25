@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "disk-utilities-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1642493376,
+        "narHash": "sha256-TCfMN5IBWxQMNBlNlutFF53jTEixa/Ei4m3mPqf1AHg=",
+        "owner": "keirf",
+        "repo": "disk-utilities",
+        "rev": "4f92336509243e8aed389ceeaff88de283251e6e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "keirf",
+        "repo": "disk-utilities",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1638122382,
@@ -13,6 +29,18 @@
         "owner": "numtide",
         "repo": "flake-utils",
         "type": "github"
+      }
+    },
+    "ipflib-src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-nDFdIo55T9cNntEY42vga8SfzQPWb90yQD2K+nGXvCk=",
+        "type": "tarball",
+        "url": "http://www.softpres.org/_media/files:ipflib42_linux-x86_64.tar.gz?cache=cache&id=download"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "http://www.softpres.org/_media/files:ipflib42_linux-x86_64.tar.gz?cache=cache&id=download"
       }
     },
     "lowdown-src": {
@@ -68,7 +96,9 @@
     },
     "root": {
       "inputs": {
+        "disk-utilities-src": "disk-utilities-src",
         "flake-utils": "flake-utils",
+        "ipflib-src": "ipflib-src",
         "nix": "nix",
         "nixpkgs": "nixpkgs"
       }

@@ -5,9 +5,13 @@
     nixpkgs.url = "github:nixos/nixpkgs";
     nix.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
+    ipflib-src.url = "http://www.softpres.org/_media/files:ipflib42_linux-x86_64.tar.gz?id=download&cache=cache";
+    ipflib-src.flake = false;
+    disk-utilities-src.url = "github:keirf/disk-utilities";
+    disk-utilities-src.flake = false;
   };
 
-  outputs = { self, nix, nixpkgs, flake-utils }:
+  outputs = { self, nix, nixpkgs, flake-utils, ipflib-src, disk-utilities-src }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
@@ -16,10 +20,7 @@
           ipflib = pkgs.stdenv.mkDerivation rec {
             pname = "ipflib";
             version = "4.2";
-            src = fetchTarball {
-              url = "http://www.softpres.org/_media/files:ipflib42_linux-x86_64.tar.gz?id=download&cache=cache";
-              sha256 = "sha256:0adwjxqzm2ix80rdsvyn0g6rzi3bw1my666ikq6xfkvriqi5sccw";
-            };
+            src = ipflib-src;
             installPhase = ''
               mkdir -p $out $out/lib
               cp -vr include $out
@@ -34,11 +35,7 @@
           disk-utilities = pkgs.stdenv.mkDerivation rec {
             pname = "disk-utilities";
             version = "0.0.0";
-            src = pkgs.fetchgit {
-              url = "https://github.com/keirf/disk-utilities.git";
-              rev = "8d74b1ad6b772014ddb492baa16c719e44e4b4bf";
-              sha256 = "sha256-R6Tg1MFXAvLOpowxjI5gHzmNobQNN3G1RslU4cEuvo0=";
-            };
+            src = disk-utilities-src;
             patchPhase = ''
               sed -i "s#libcapsimage.so#${ipflib}/lib/libcapsimage.so#" libdisk/stream/caps.c
             '';
