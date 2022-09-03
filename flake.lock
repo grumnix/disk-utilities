@@ -31,6 +31,30 @@
         "type": "github"
       }
     },
+    "ipflib": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "ipflib-src": "ipflib-src",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1662204284,
+        "narHash": "sha256-7dUQmxSgDJ2LB5SlS1C1nb6pIutdHXMOJXIuPp/hI7g=",
+        "owner": "grumnix",
+        "repo": "ipflib",
+        "rev": "3c5aad0bb9b09d83787487c83e15d16a58ace4b0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "grumnix",
+        "repo": "ipflib",
+        "type": "github"
+      }
+    },
     "ipflib-src": {
       "flake": false,
       "locked": {
@@ -45,11 +69,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1660661643,
-        "narHash": "sha256-WlgPb7KLTZUeY31o9HWhu37pvgA76MKwakaXefkaIB4=",
+        "lastModified": 1662099760,
+        "narHash": "sha256-MdZLCTJPeHi/9fg6R9fiunyDwP3XHJqDd51zWWz9px0=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "a82127cea64fd801c5e138ae23dfd444ec1e06d1",
+        "rev": "67e45078141102f45eff1589a831aeaa3182b41e",
         "type": "github"
       },
       "original": {
@@ -63,7 +87,7 @@
       "inputs": {
         "disk-utilities-src": "disk-utilities-src",
         "flake-utils": "flake-utils",
-        "ipflib-src": "ipflib-src",
+        "ipflib": "ipflib",
         "nixpkgs": "nixpkgs"
       }
     }
