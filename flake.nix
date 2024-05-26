@@ -2,7 +2,7 @@
   description = "A collection of utilities for ripping, dumping, analysing, and modifying disk images.";
 
   inputs = rec {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-24.05";
     flake-utils.url = "github:numtide/flake-utils";
 
     ipflib.url = "github:grumnix/ipflib";
