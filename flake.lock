@@ -3,11 +3,11 @@
     "disk-utilities-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1712884759,
-        "narHash": "sha256-Fe71yZvZIROgw9UXhPtZBwZmTHsIRUwOlKhd2e0kHGA=",
+        "lastModified": 1728280902,
+        "narHash": "sha256-t+xXSZRegUNX6n/U/UVufWT3+1HtlYtrKy9X1tJTtog=",
         "owner": "keirf",
         "repo": "disk-utilities",
-        "rev": "3845efb7d0f89acfe4362dcf3fd1aecb0b4c2525",
+        "rev": "21aeb4423957098d49ee5d0aec80b7e541e3eef5",
         "type": "github"
       },
       "original": {
@@ -21,11 +21,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1710146030,
-        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
         "type": "github"
       },
       "original": {
@@ -45,11 +45,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1684866835,
-        "narHash": "sha256-FIpSTzQ7rdi8RDdoUjtPv3QG/dVuzXizLOeuEG8yTNo=",
+        "lastModified": 1716738925,
+        "narHash": "sha256-EpYMv1OIeAN6sKo6r91abilbtPJeZSs9liwsHr+CPj8=",
         "owner": "grumnix",
         "repo": "ipflib",
-        "rev": "c730366d428233b0c582ec8f544620a1a50fcc1f",
+        "rev": "ab929be4e5d47dc78e1faa0c1092bfbb5e14cdd8",
         "type": "github"
       },
       "original": {
@@ -61,6 +61,7 @@
     "ipflib-src": {
       "flake": false,
       "locked": {
+        "lastModified": 1673026648,
         "narHash": "sha256-nDFdIo55T9cNntEY42vga8SfzQPWb90yQD2K+nGXvCk=",
         "type": "tarball",
         "url": "http://www.softpres.org/_media/files:ipflib42_linux-x86_64.tar.gz?cache=cache&id=download"
@@ -72,16 +73,16 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1716542732,
-        "narHash": "sha256-0Y9fRr0CUqWT4KgBITmaGwlnNIGMYuydu2L8iLTfHU4=",
+        "lastModified": 1731755305,
+        "narHash": "sha256-v5P3dk5JdiT+4x69ZaB18B8+Rcu3TIOrcdG4uEX7WZ8=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d12251ef6e8e6a46e05689eeccd595bdbd3c9e60",
+        "rev": "057f63b6dc1a2c67301286152eb5af20747a9cb4",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-24.05",
+        "ref": "nixos-24.11",
         "repo": "nixpkgs",
         "type": "github"
       }
